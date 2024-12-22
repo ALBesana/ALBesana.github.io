@@ -1,14 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>My First Web Page</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+<style>
+    nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+    background-color: #04AA6D;
+    }
+</style>
 </head> 
 <body>
 
-<h1>Explore PH Tours Landing Page</h1>
-<p>This is a paragraph.</p>
+<header>
+    <h1 style="text-align: center; font-size: 300%; background-color: yellow;"><img src="Department_of_Tourism_(DOT).png" 
+        alt="Logo" style="width: 100px; height: 100px;">Explore PH Tours Landing Page</h1>
+    <h1 style="text-align: center;"><i>Your Gateway to the Philippines!</i></h1>
+</header>
 
+<main>
+    <nav>
+        <li><a href="#home"><b>Home</b></a></li>
+        <li><a href="#services"><b>Services</b></a></li>
+        <li><a href="#promos"><b>Promos</b></a></li>
+        <li style="float:right"><a class="active" href="#contact"><b>Contact</b></a></li>
+    </nav>
+
+    <h1>BOOK YOUR NEXT ADVENTURE TODAY!</h1>
+    <p>Explore the Philippines like never before with our exciting packages. Limited slots available for promo deals.</p>
+    <br>
+    <h2>Don't Miss Out!</h2>
+    <button type="button">Book Now!</button>
+
+    <br>
+
+    <h2>Offered Services</h2>
+    <ol>
+        <li><b>Accomodation Booking and Reservation</b></li>
+        <br>
+        <p>Hotels, motels, hostels, resorts, and vacation rentals provide lodging options for travelers.</p>
+        <br>
+        <li><b>Transportation Reservation and Rental</b></li>
+        <br>
+        <p>Services include airlines, car rentals, buses, trains, and cruise lines that facilitate travel from one location to another.</p>
+        <br>
+        <li><b>Food and Beverage</b></li>
+        <br>
+        <p>Restaurants, cafes, bars, and catering services that provide dining experiences for tourists.</p>
+    </ol>
+
+    <br>
+    <h2>Special Promos</h2>
+    <ol>
+        <li><b>Kids Sea Camp The Philippines Adventure 2024</b></li>
+        <br>
+        <p></p>
+        <br>
+        <li><b>Palawan Tour Packages</b></li>
+        <br>
+        <p>Starting from $199 Puerto Princessa: 4 days and 3 nights</p>
+        <p>Starting from $285 El Nido: 4 days and and 3 nights</p>
+        <p>Starting from $360 Coron 4 days and 3 nights</p>
+        <br>
+        <li><b>6 Days / 5 Nights Hotel Quarantine Package</b></li>
+        <br>
+        <p>5 nights hotel accomodatiob, 3 packed meals, one way airport transfer, using Department of Tourism accredited vehicle taxes</p>
+        <br>
+        <li><b>Dauin Island Adventure Package - Philippines</b></li>
+        <br>
+        <p>8 days and 7 days in Azure Dive Resort. Destination: Dauin in Negros Oriental</p>
+        <br>
+        <li><b>Sorsogon Matnog Subic Beach Day Tour</b></li>
+        <br>
+        <p>Day Tour with Cottage Rental & Transfers from Legazpi</p>
+    </ol>
+
+    <br>
+    <h2>Contact Us</h2>
+    <ul>
+        <li>Manila Branch: (+63)917-433-2100</li>
+        <br>
+        <li>Cebu Branch: (+63)998-420-6930</li>
+        <br>
+        <li>Mindanao Branch: (+63)927-743-4201</li>
+        <br>
+    </ul>
+</main>
+
+<footer>
+    <p style="text-align: center;">Author: A.L. Schatz A. Besana</p>
+    <p style="text-align: center;"><a href="example@email.com">albesana@email.com</a></p>
+
+    <p style="text-align: center;"><small>Copyright © 2069-4200 BESANA. BESANA DOMAINS PTE. LTD. All Rights Reserved (not really)</small></p>
+</footer>
 </body>
 </html>
