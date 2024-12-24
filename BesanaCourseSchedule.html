@@ -10,26 +10,144 @@
         border: 2px solid black;
         border-collapse: collapse;
     }
+
+    th, td {
+        padding: 8px;
+    }
+
+    tr:hover {background-color: #D6EEEE;}
 </style>
+
+<header>
+    <h1 style="text-align: center;">2nd Term Course Schedule</h1>
+    <img src="/BesanaW3Assets/logoccis.jpg" alt="CCIS Logo" style="float: right; width: 200px; height: 200px;">
+    <img src="/BesanaW3Assets/Logo-Final-2.png" alt="MMCM Logo" style="float: right; width: 450px; height: 175px;">
+</header>
+
 <body>
+    <!--Course Information Table-->
+    <h2>Course Information</h2>
+    <table>
+        <!--Table Header-->
+        <thead>
+            <tr>
+                <td bgcolor="#8feded"><b>Course</b></td>
+                <td bgcolor="#8feded"><b>Title</b></td>
+                <td bgcolor="#8feded"><b>Section</b></td>
+                <td bgcolor="#8feded"><b>Professor</b></td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!--Course: CS107-->
+            <tr>
+                <td>CS107</td>
+                <td>Information Management</td>
+                <td>A224</td>
+                <td>Martzel P. Baste</td>
+            </tr>
+
+            <!--Course: CS107L-->
+            <tr>
+                <td>CS107L</td>
+                <td>Information Management (Lab)</td>
+                <td>A224</td>
+                <td>Martzel P. Baste</td>
+            </tr>
+
+            <!--Course: EMC112-->
+            <tr>
+                <td>EMC112</td>
+                <td>Principles of 2D Animation</td>
+                <td>A225</td>
+                <td>Earl Robin Batenga</td>
+            </tr>
+
+            <!--Course: EMC112L-->
+            <tr>
+                <td>EMC112L</td>
+                <td>Principles of 2D Animation (Lab)</td>
+                <td>A225</td>
+                <td>Earl Robin Batenga</td>
+            </tr>
+
+            <!--Course: EMC113-->
+            <tr>
+                <td>EMC113</td>
+                <td>Audio Design and Sound Engineering</td>
+                <td>A225</td>
+                <td>Joshel Dominic Cabig</td>
+            </tr>
+    
+            <!--Course: EMC113L-->
+            <tr>
+                <td>EMC113L</td>
+                <td>Audio Design and Sound Engineering (Lab)</td>
+                <td>A225</td>
+                <td>Joshel Dominic Cabig</td>
+            </tr>
+
+            <!--Course: HUM039-->
+            <tr>
+                <td>HUM039</td>
+                <td>Ethics</td>
+                <td>A224</td>
+                <td>Heidegger Jake Diacono</td>
+            </tr>
+
+            <!--Course: IT103-->
+            <tr>
+                <td>IT103</td>
+                <td>Web Programming</td>
+                <td>A224</td>
+                <td>Clyde Chester R. Balaman</td>
+            </tr>
+
+            <!--Course: IT103L-->
+            <tr>
+                <td>IT103L</td>
+                <td>Web Programming (Lab)</td>
+                <td>A224</td>
+                <td>Clyde Chester R. Balaman</td>
+            </tr>
+
+            <!--Course: SS086-->
+            <tr>
+                <td>SS086</td>
+                <td>Gender and Society</td>
+                <td>A224</td>
+                <td>Weila Ignalig</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    
+
+    <!--Schedule Table-->
     <table style="width: 100%;">
+        <h2>Schedule Table</h1>
+        <!--Table Header-->
         <thead>
             <tr>
                 <td rowspan="2">Time</td>
                 <th colspan="4" style="text-align: left;"><b>BESANA, A.L. SCHATZ A.</b></th>
-                <td style="text-align: right;">TERM</td>
-                <th><b>2ND</b></th>
+                <td style="text-align: right;"><b>2ND TERM</b></td>
+                <th><b>AY 2024-2025</b></th>
                 <tr>
-                    <td style="text-align: center;">Monday</td>
-                    <td style="text-align: center;">Tuesday</td>
-                    <td style="text-align: center;">Wednesday</td>
-                    <td style="text-align: center;">Thursday</td>
-                    <td style="text-align: center;">Friday</td>
-                    <td style="text-align: center;">Saturday</td>
+                    <td bgcolor="#8feded" style="text-align: center;">Monday</td>
+                    <td bgcolor="#8feded" style="text-align: center;">Tuesday</td>
+                    <td bgcolor="#8feded" style="text-align: center;">Wednesday</td>
+                    <td bgcolor="#8feded" style="text-align: center;">Thursday</td>
+                    <td bgcolor="#8feded" style="text-align: center;">Friday</td>
+                    <td bgcolor="#8feded" style="text-align: center;">Saturday</td>
                 </tr>
             </tr>
         </thead>
+
+        <!--Table Data-->
         <tbody>
+
             <!-- 7:00am to 8:15am-->
             <tr>
                 <th style="text-align: center ;">07:00 AM</th>
@@ -70,8 +188,8 @@
                 <td style="text-align: center;">━━━</td>
                 <td style="text-align: center;">━━━</td>
                 <td style="text-align: center;">━━━</td>
-                <td rowspan="3" style="text-align: center;"><b>CS107L</b></td>
-                <td rowspan="3" style="text-align: center;"><b>EMC113L</b></td>
+                <td rowspan="3" style="text-align: center;"><b>CS107L | 3:45 hrs</b></td>
+                <td rowspan="3" style="text-align: center;"><b>EMC113L | 3:45 hrs</b></td>
 
                 <!-- 12:00pm to 1:15pm-->
                 <tr>
@@ -86,19 +204,19 @@
             <!-- 01:15pm to 02:30pm-->
             <tr>
                 <th style="text-align: center;">01:15 PM</th>
-                <td style="text-align: center;"><b>HUM039</b></td>
+                <td style="text-align: center;"><b>HUM039 | 1:15 hrs</b></td>
                 <td style="text-align: center;">━━━</td>
-                <td style="text-align: center;"><b>HUM039</b></td>
-                <td rowspan="2" style="text-align: center;"><b>CS107</b></td>
+                <td style="text-align: center;"><b>HUM039 | 1:15 hrs</b></td>
+                <td rowspan="2" style="text-align: center;"><b>CS107 | 2:30 hrs</b></td>
 
                 <!-- 02:30pm to 03:45pm-->
                 <tr>
                     <th style="text-align: center;">02:30 PM</th>
-                    <td style="text-align: center;"><b>SS086</b></td>
+                    <td style="text-align: center;"><b>SS086 | 1:15 hrs</b></td>
                     <td style="text-align: center;">━━━</td>
-                    <td style="text-align: center;"><b>SS086</b></td>
-                    <td rowspan="3" style="text-align: center;"><b>IT103L</b></td>
-                    <td rowspan="3" style="text-align: center;"><b>EMC112L</b></td>
+                    <td style="text-align: center;"><b>SS086 | 1:15 hrs</b></td>
+                    <td rowspan="3" style="text-align: center;"><b>IT103L | 3:45 hrs</b></td>
+                    <td rowspan="3" style="text-align: center;"><b>EMC112L | 3:45 hrs</b></td>
 
                     <!-- 03:45pm to 05:00pm-->
                     <tr>
@@ -106,13 +224,13 @@
                         <td style="text-align: center;">━━━</td>
                         <td style="text-align: center;">━━━</td>
                         <td style="text-align: center;">━━━</td>
-                        <td rowspan="2" style="text-align: center;"><b>IT103</b></td>
+                        <td rowspan="2" style="text-align: center;"><b>IT103 | 2:30 hrs</b></td>
 
                         <!-- 05:00pm to 06:15pm-->
                         <tr>
                             <th style="text-align: center;">05:00 PM</th>
-                            <td rowspan="2" style="text-align: center;"><b>EMC112</b></td>
-                            <td rowspan="2" style="text-align: center;"><b>EMC113</b></td>
+                            <td rowspan="2" style="text-align: center;"><b>EMC112 | 2:30 hrs</b></td>
+                            <td rowspan="2" style="text-align: center;"><b>EMC113 | 2:30 hrs</b></td>
                             <td style="text-align: center;">━━━</td>
                             
                             <!-- 06:15pm to 07:30pm-->
@@ -151,9 +269,5 @@
             </tr>
         </tbody>
     </table>
-
-    <ol>
-        <li><b>CS107 - Information Management</b></li>
-    </ol>
 </body> 
 </html> 
