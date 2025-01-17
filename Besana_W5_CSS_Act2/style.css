@@ -1,0 +1,19 @@
+.One{
+    width: 101%;
+    background-color: #ff7169;
+    padding: 0px;
+    font-size: 60px;
+    margin: 0px
+}
+
+.Two{
+    width: 101%;
+    background-color: #0088fe;
+    padding: 0px;
+    font-size: 60px;
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
