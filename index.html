@@ -3,13 +3,61 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>My First Web Page</title> 
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body> 
-    <h1>Hi! I am A.L. Schatz A. Besana!</h1>
+<body>
+    <div id="background-overlay"></div>
+
+    <header>
+        <h1 class="header-title">My Portfolio</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#html tasks">HTML Tasks</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="welcome-container">
+        <h1 id="welcome">Hi! Welcome to my Profile! (It's not done yet but it will be in a few hours. 
+            I just need a break, I've been working on this for almost 24 hours now.)</h1>
+        <img src="assets/images/welcome-gif.gif" alt="Welcome Gif" class="welcome-gif">
+    </div>
+
+    <section id="about" class="about-section">
+        <div class="profile-container">
+            <img src="assets/images/hi_photo.jpg" alt="A.L. Schatz A. Besana" class="profile-image">
+        </div>
+        <br>
+        <h2>About Me</h2>
+        <p>Hello! I'm A.L. Schatz A. Besana, a 2nd Year EMC student, an avid gamer and passionate, aspiring game developer.
+            I love eating foods, playing video games, chilling with friends, and vibing with music.
+            This portfolio showcases my achievements, projects, and learning experiences in the world of coding.</p>
+        
+            <h1>My Achievements and Certificates</h1>
+            <div class="images-row">
+                <img src="assets/images/achievement-1.jpg" alt="Achievement 1" class="achievement-image">
+                <img src="assets/images/achievement-2.jpg" alt="Achievement 2" class="achievement-image">
+                <img src="assets/images/achievement-3.jpg" alt="Achievement 3" class="achievement-image">
+            </div>
+    </section>
+
     <h2>HTML Tasks</h2>
-    
+
+    <audio id="background-music" autoplay loop>
+        <source src="assets/music/L'amore_dice_ciao.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button id="mute-toggle" class="floating-button">
+        <img src="assets/images/unmuted_icon.png" alt="Mute/Unmute" id="mute-icon">
+    </button>
+
     <ol>
         <li><a href="BesanaExplorePHTours.html">Explore PH Tours (W2)</a></li>
         <li><a href="BesanaCourseSchedule.html">2nd Term Course Schedule (W3)</a></li>
@@ -18,5 +66,7 @@
         <li><a href="Besana_A224_W6_JS_Act01/index.html">Besana_A224_W6_JS_Act01 (W6)</a></li>
         <li><a href="Besana_A224_W6_JS_Act02/index.html">Besana_A224_W6_JS_Act02 (W6)</a></li>
     </ol>
-</body> 
-</html> 
+
+    <script src="script.js"></script>
+</body>
+</html>
