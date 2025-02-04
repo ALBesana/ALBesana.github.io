@@ -46,10 +46,17 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('nav ul li a').forEach(anchor => {
         anchor.addEventListener('click', function(event) {
-            if (this.hash !== "") {
+            const targetId = this.getAttribute('href');
+
+            if (targetId.startsWith('#') && targetId.length > 1) {
                 event.preventDefault();
-                const targetSection = document.querySelector(this.hash);
-                targetSection.scrollIntoView({ behavior: "smooth" });
+                const targetSection = document.querySelector(targetId);
+
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: "smooth"
+                    });
+                }
             }
         });
     });

@@ -17,19 +17,19 @@
     <nav class="navbar">
         <ul>
             <li><a href="#" id="home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#html tasks">HTML Tasks</a></li>
+            <li><a href="#about-anchor">About</a></li>
+            <li><a href="#html-tasks">WebProg Tasks</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <div class="welcome-container">
-        <h1 id="welcome">Hi! Welcome to my Profile! (It's not done yet but it will be in a few hours. 
-            I just need a break, I've been working on this for almost 24 hours now.)</h1>
+        <h1 id="welcome" class="contrast-background">Wake up, Samurai. Welcome to my Profile! </h1>
         <img src="assets/images/welcome-gif.gif" alt="Welcome Gif" class="welcome-gif">
     </div>
 
     <section id="about" class="about-section">
+        <div id="about-anchor"></div>
         <div class="profile-container">
             <img src="assets/images/hi_photo.jpg" alt="A.L. Schatz A. Besana" class="profile-image">
         </div>
@@ -47,7 +47,33 @@
             </div>
     </section>
 
-    <h2>HTML Tasks</h2>
+    <div class="webprog-container">
+        <section id="html-tasks" class="about-section">
+            <div id="html-tasks-anchor"></div>
+    
+            <h1>HTML Tasks</h1>
+            <ul>
+                <li><a href="BesanaExplorePHTours.html">Explore PH Tours (W2)</a></li>
+                <li><a href="BesanaCourseSchedule.html">2nd Term Course Schedule (W3)</a></li>
+            </ul>
+    
+            <h1>CSS Tasks</h1>
+            <ul>
+                li><a href="Besana_W5_CSS_Act1/index.html">Besana_W5_CSS_Act1 (W5)</a></li>
+                <li><a href="Besana_W5_CSS_Act2/index.html">Besana_W5_CSS_Act2 (W5)</a></li>
+            </ul>
+    
+            <h1>JavaScript Tasks</h1>
+            <ul>
+                <li><a href="Besana_A224_W6_JS_Act01/index.html">Besana_A224_W6_JS_Act01 (W6)</a></li>
+                <li><a href="Besana_A224_W6_JS_Act02/index.html">Besana_A224_W6_JS_Act02 (W6)</a></li>
+            </ul>
+        </section>    
+
+        <div class="hacker-gif">
+            <img src="assets/images/hacker-pc.gif" alt="Hacker Time" />
+        </div>
+    </div>
 
     <audio id="background-music" autoplay loop>
         <source src="assets/music/L'amore_dice_ciao.mp3" type="audio/mpeg">
@@ -58,14 +84,14 @@
         <img src="assets/images/unmuted_icon.png" alt="Mute/Unmute" id="mute-icon">
     </button>
 
-    <ol>
-        <li><a href="BesanaExplorePHTours.html">Explore PH Tours (W2)</a></li>
-        <li><a href="BesanaCourseSchedule.html">2nd Term Course Schedule (W3)</a></li>
-        <li><a href="Besana_W5_CSS_Act1/index.html">Besana_W5_CSS_Act1 (W5)</a></li>
-        <li><a href="Besana_W5_CSS_Act2/index.html">Besana_W5_CSS_Act2 (W5)</a></li>
-        <li><a href="Besana_A224_W6_JS_Act01/index.html">Besana_A224_W6_JS_Act01 (W6)</a></li>
-        <li><a href="Besana_A224_W6_JS_Act02/index.html">Besana_A224_W6_JS_Act02 (W6)</a></li>
-    </ol>
+    <footer>
+        <p>&copy; 2025 A.L. Schatz A. Besana</p>
+        <div class="social-links">
+          <a href="">LinkedIn</a>
+          <a href="https://github.com/ALBesana">GitHub</a>
+          <a href="https://x.com/Gibloin">Twitter</a>
+        </div>
+      </footer>
 
     <script src="script.js"></script>
 </body>
