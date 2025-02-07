@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Mute button functionality
+    // Mute button
     muteIcon.src = audio.muted ? 'assets/images/muted_icon.png' : 'assets/images/unmuted_icon.png';
     muteButton.addEventListener('click', () => {
         audio.muted = !audio.muted;
