@@ -77,10 +77,20 @@ document.addEventListener("DOMContentLoaded", () => {
         muteIcon.src = audio.muted ? 'assets/images/muted_icon.png' : 'assets/images/unmuted_icon.png';
     });
 
-    // Audio play on load
+    function playMusic() {
+        audio.play().then(() => {
+            console.log("Music started playing.");
+        }).catch(() => {
+            console.warn("Autoplay blocked! Waiting for user interaction.");
+        });
+        document.removeEventListener("click", playMusic); // Remove listener after first click
+    }
+
+    // Try playing on page load (will fail due to autoplay restrictions)
     audio.volume = 0.08;
     audio.play().catch(() => {
-        console.log("Autoplay was blocked. Click the mute button to start playback.");
+        console.warn("Autoplay blocked. Waiting for user interaction...");
+        document.addEventListener("click", playMusic); // Listen for first user click
     });
 
     // Initial adjustments
