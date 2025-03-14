@@ -3,12 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const homeLink = document.getElementById('home');
     const textElements = document.querySelectorAll('h1, h2, p, a');
     const achievementImages = document.querySelectorAll('.achievement-image');
+    const profileImage = document.querySelector('.profile-image');
     const backgroundOverlay = document.getElementById('background-overlay');
     const fullscreenImage = document.createElement('img');
-    const profileImage = document.querySelector('.profile-image');
     const audio = document.getElementById('background-music');
     const muteButton = document.getElementById('mute-toggle');
     const muteIcon = document.getElementById('mute-icon');
+    const dropdownBtn = document.querySelector('.dropdown-btn');
+    const dropdownContent = document.querySelector('.dropdown-content');
+    const wireframeImages = document.querySelectorAll('.wireframe-image');
 
     fullscreenImage.classList.add('fullscreen-image');
     document.body.appendChild(fullscreenImage);
@@ -69,6 +72,21 @@ document.addEventListener("DOMContentLoaded", () => {
             backgroundOverlay.style.display = 'none';
         });
     });
+    
+    wireframeImages.forEach(img => {
+        img.addEventListener('click', () => {
+            fullscreenImage.src = img.src;
+            fullscreenImage.classList.add('show');
+            backgroundOverlay.style.display = 'block';
+        });
+    });
+
+    dropdownBtn.addEventListener('click', () => {
+        const isVisible = dropdownContent.style.display === 'block';
+        
+        dropdownContent.style.display = isVisible ? 'none' : 'block';
+        dropdownBtn.textContent = isVisible ? 'View Wireframes' : 'Hide Wireframes'; // Toggle text
+    });    
 
     // Mute button
     muteIcon.src = audio.muted ? 'assets/images/muted_icon.png' : 'assets/images/unmuted_icon.png';
